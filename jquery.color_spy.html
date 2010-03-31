@@ -1,0 +1,55 @@
+<html>
+<head>
+  <script src="./lib/jquery-1.4.2.js"></script>
+  <script src="./lib/jquery.fn.js"></script>
+  <script src="./lib/jquery.print.js"></script>
+  <script src="./lib/screw.builder.js"></script>
+  <script src="./lib/screw.matchers.js"></script>
+  <script src="./lib/screw.events.js"></script>
+  <script src="./lib/screw.behaviors.js"></script>
+  <link rel="stylesheet" href="./lib/screw.css">
+
+  <!-- code under test -->
+  <script src="./jquery.color_spy-0.1.0.js"></script>
+
+  <!-- tests -->
+  <script src="./jquery.color_spy_spec.js"></script>
+
+  <style type="text/css">
+    .hex_colored {
+      background-color: #ff0000;
+      color: #0000ff
+    }
+
+    .rgb_colored {
+      background-color: rgb(255, 0, 0);
+      color: rgb(0, 0, 255)
+    }
+
+    .name_colored {
+      background-color: red;
+      color: blue
+    }
+  </style>
+</head>
+<body>
+<div id='fixtures'>
+  <div id="hex_inline" style="background-color: #ff0000; color: #0000ff">X</div>
+  <div id="rgb_inline" style="background-color: rgb(255,0,0); color: rgb(0,0,255)">X</div>
+  <div id="name_inline" style="background-color: red; color: blue">X</div>
+
+  <div id="hex_class" class="hex_colored">X</div>
+  <div id="rgb_class" class="rgb_colored">X</div>
+  <div id="name_class" class="name_colored">X</div>
+
+  <div id="grandfather">
+    <div id="father" class="hex_colored">
+      <div id="son">
+        SON
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
