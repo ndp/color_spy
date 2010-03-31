@@ -32,7 +32,7 @@
     var parts = color.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)(,\s*\d+)?\)$/);
     // parts => ["rgb(0, 70, 255", "0", "70", "255"]
     if (parts) {
-      return rgb2hex(parts.splice(1));
+	return rgb2hex(parts.splice(1,3));
     }
     return color;
   };
@@ -47,7 +47,6 @@
   };
   $.fn.color = function() {
     var bc = $(this).css('color');
-    console.log(bc);
     if (bc && bc !== 'transparent') { //&& bc.replace(' ','') != 'rgba(0,0,0,0)'
       return $.toHexColor(bc);
     } else {
