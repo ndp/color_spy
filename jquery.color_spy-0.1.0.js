@@ -3,6 +3,10 @@
  */
 (function($) {
 
+  /**
+   * Converts an array of values to a hex value such as "#ff3366"
+   * @param rgb an array of either integers or strings, such as [255,32,43].
+   */
   function rgb2hex(rgb) {
     var c = [];
     for (var i = 0; i < 3; ++i) {
@@ -15,6 +19,9 @@
     return "#" + c.join(''); // "#0070ff"
   }
 
+  /**
+   * Converts varioius formats to the standard size-color hex string.
+   */
   $.toHexColor = function(color) {
     if (color.match(/#[a-f0-9]{6,6}/i)) {
       return color;
