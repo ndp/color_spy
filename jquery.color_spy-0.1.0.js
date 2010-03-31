@@ -1,5 +1,6 @@
 /**
  * Calculates real color of items and their backgrounds, similar to an eye-dropper.
+ * Copyright (c) 2010 Andrew J. Peterson, NDP Software. All Rights Reserved.
  */
 (function($) {
 
