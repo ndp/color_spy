@@ -9,11 +9,11 @@ Tested on Firefox, Chrome, Safari, IE7.
 
 
 ## Usage
-  &lt;script src="./lib/jquery-1.4.2.js">&lt;/script>
-  &lt;script src="./jquery.color_spy-0.1.0.js">&lt;/script>
-  &lt;script type="text/javascript">
+    &lt;script src="./lib/jquery-1.4.2.js">&lt;/script>
+    &lt;script src="./jquery.color_spy-0.1.0.js">&lt;/script>
+    &lt;script type="text/javascript">
     alert($('.selector').backgroundColor());
-  &lt;/script>
+    &lt;/script>
 
 ### $(...).backgroundColor()
 
